@@ -111,18 +111,18 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          return showMaterialScrollPicker(
-            // showDivider: false,
-            context: context,
-            title: "From",
-            items: usStates,
-            selectedItem: selectedUsState,
-            buttonTextColor: Colors.yellow,
-            onChanged: (value) => setState(() => selectedUsState = value),
-          );
-        },
-        // _incrementCounter,
+        onPressed: _incrementCounter,
+        // () {
+        //   return showMaterialScrollPicker(
+        //     // showDivider: false,
+        //     context: context,
+        //     title: "From",
+        //     items: usStates,
+        //     selectedItem: selectedUsState,
+        //     buttonTextColor: Colors.yellow,
+        //     onChanged: (value) => setState(() => selectedUsState = value),
+        //   );
+        // },
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
